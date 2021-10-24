@@ -1,0 +1,645 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: questrial, sans-serif;
+}
+html, body{
+    height: 100%;
+}
+.container{
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+header > .container{
+    padding: 0;
+}
+header{
+    padding: 5px 0;
+}
+.logo img{
+    max-width: 70px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu nav ul{
+    display: flex;
+}
+.menu nav ul li{
+    list-style: none;
+}
+.menu nav i{
+    margin-left: 60px;
+    cursor: pointer;
+    color: #11da71;
+}
+.menu nav ul li:not(:first-child){
+    margin-left: 60px;
+}
+.menu nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.btn-drop-menu{
+    padding: 10px 13px;
+    background-color:#11da71;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    width: fit-content;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+.menu .input-subscribe{
+    display: none;
+    margin-top: 0 !important;
+    margin-bottom: 15px;
+    width: 50%;
+}
+.hero{
+    min-height: 660px;
+    background-image: url("../images/firewatch-wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.hero-information{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-information h1{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+.hero-information p{
+    margin-top: 20px;
+    max-width: 450px;
+    display: inline-block;
+    font-weight: lighter;
+    line-height: 25px;
+    text-align: center;
+}
+.btn-hero,
+.btn-program,
+.btn-training,
+.btn-news{ 
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 32px;
+    border-radius: 20px;
+    border: none;
+    background-color: #11da71;
+    background-image: linear-gradient(135deg, #11da71 56%, #00a654 91%);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 9px 25px -8px #11da71;
+    font-weight: bold;
+}
+.btn-news{
+    margin-top: 0 !important;
+}
+.btn-program{
+    padding: 13px 25px !important;
+    font-size: 12px !important;
+}
+.btn-training{
+    margin-top: 50px !important;
+    text-align: center !important;
+}
+.programs{
+    padding: 80px 0;
+    background-color: rgb(220, 220, 220);
+    z-index: 1;
+    position: relative;
+}
+.programs-title,
+.trainings-title,
+.news-title,
+.reviews-title{
+    text-align: center;
+}
+.programs-title p,
+.trainings-title p,
+.news-title p,
+.reviews-title p{
+    margin-top: 20px;
+}
+.list-programs{
+    display: flex;
+    margin-top: 60px;
+}
+.box-program:not(:first-child){
+    margin-left: 15px;
+}
+.box-program{
+    width: 25%;
+    padding: 4px;
+    background-color: white;
+    text-align: center;
+    border-radius: 2px;
+    padding: 20px 25px;
+}
+.box-program img{
+    width: 150px;
+    height: 110px;
+}
+.box-program h3{
+    font-weight: normal;
+    margin-top: 25px;
+}
+.box-program p{
+    font-size: 14px;
+    margin-top: 25px;
+}
+.trainings,
+.reviews{
+    padding: 80px 0;
+    background-color: rgb(240, 240, 240);
+    position: relative;
+}
+.training-wrapper{
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.training-wrapper-2{
+    width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    height: 100%;
+}
+.box-trainings{
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+}
+.box-trainings{
+    margin-bottom: 10px;
+}
+.logo-training{
+    height: 100%;
+    width: 80px;
+}
+.logo-training img{
+    max-width: 100%;
+}
+.training-title-wrapper{
+    margin-left: 30px;
+}
+.training-title-wrapper p:not(:first-child){
+    margin-top: 10px;
+    font-weight: bold;
+}
+.training-wrapper-information{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.training-information{
+    display: flex;
+    align-items: center;
+}
+.training-information i{
+    cursor: pointer;
+}
+.training-information div:not(:first-child),
+.training-information i{
+    margin-left: 50px;
+}
+.training-information .box-training-data p:not(:first-child){
+    margin-top: 10px;
+    color: #11da71;
+    font-weight: bold;
+}
+.news{
+    padding: 80px 0;
+}
+.news-wrapper{
+    margin-top: 60px;
+    display: flex;
+}
+.news-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-news-wrapper{
+    display: flex;
+}
+.box-news{
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+}
+.box-news:not(:first-child){
+    margin-left: 65px;
+}
+.box-news p{
+    font-size: 13px;
+}
+.box-news h3{
+    margin-top: 10px;
+}
+.box-news a{
+    text-decoration: none;
+    color: black;
+}
+.box-news img{
+    max-width: 100%;
+    margin-top: 25px;
+}
+.btn-news-wrapper{
+    margin-top: 35px;
+}
+.reviews > .container{
+    max-width: 1300px;
+}
+.reviews-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 30px;
+}
+.box-reviews{
+    float: left;
+    width: 33.33%;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 9px 35px -33px #000;
+}
+.box-reviews img{
+    max-width: 60px;
+    margin-right: 20px;
+}
+.box-reviews{
+    margin: 0 10px
+}
+.information-reviews p{
+    margin-top: 10px;
+    font-size: 14.5px;
+}
+.information-reviews p:last-child{
+    color:#11da71;
+}
+.box-reviews-wrapper{
+    max-width: 100%;
+    overflow: hidden;
+}
+footer{
+    padding: 80px 0;
+}
+footer > .container{
+    max-width: 900px;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.edu-information{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+.edu-information img{
+    max-width: 70px;
+}
+.edu-information p{
+    margin-top: 20px;
+}
+.edu-menu{
+    text-align: center;
+    display: inline-block;
+    text-align: left;
+}
+.edu-menu li{
+    list-style: none;
+    margin-top: 15px;
+}
+.edu-menu li a{
+    text-decoration: none;
+    color: black;
+}
+.contacts{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.information-contacts-one{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.information-contacts-one a{
+    color:#11da71 ;
+}
+.information-contacts-two{
+    margin-top: 15px;
+}
+.contacts hr{
+    width: 50%;
+    border-collapse: collapse;
+    border: 0.5px solid rgb(240, 240, 240);
+    margin-top: 15px;
+}
+.subscribe{
+    margin-top: 20px;
+}
+.input-subscribe{
+    margin-top: 18px;
+    position: relative;
+}
+.input-subscribe input{
+    width: 100%;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 20px;
+    padding: 9px 79px 9px 10px;
+    outline: none;
+}
+.subscribe-submit{
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+}
+.subscribe-submit input{
+    height: 100%;
+    background-color: #11da71;
+    background-image: linear-gradient(135deg, #11da71 56%, #00a654 91%);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 9px 25px -8px #11da71;
+    font-weight: bold;
+    border: 0;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+.run-the-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 20px;
+    color: white;
+    background-color:#11da71;
+    border-radius: 50%;
+    z-index: 0;
+    box-shadow: 0px 9px 25px -8px #11da71;
+    cursor: pointer;
+}
+.emailenviado{
+    position: absolute;
+    top:40px;
+    right: 5px;
+    height: auto;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: #11da71;
+    color: white;
+    display: none;
+    box-shadow: 0px 9px 25px -8px #11da71;
+    z-index: 20;
+}
+.wrong-email{
+    display: flex;
+    position: absolute;
+    top:40px;
+    right: 5px;
+    height: auto;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: #c62828;
+    color: white;
+    display: none;
+    box-shadow: 0px 9px 25px -8px #c62828;
+    z-index: 20;
+}
+.wrong-email h4{
+    margin: 0 20px;
+}
+/****SLICK SLIDER****/
+
+.slick-track{
+    height: 100%;
+    max-height: 100%;
+}
+.slick-list{
+    overflow: hidden;
+}
+.trainings .slick-dotted ul{
+    position: absolute !important;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-50%);
+    right:80px;
+}
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+    margin-top: 40px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin-top: 25px;
+    margin-right: 8px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: white;
+	border-width: 0;
+	background: white;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #11da71;
+	color: #11da71;
+}
+
+.slick-slide:focus { outline: none; }
+
+@media screen and (max-width:1240px){
+    .trainings .slick-dotted ul{
+        position: inherit !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:1070px) {
+    .menu{
+        width: 100%;
+        display: none;
+        padding: 0 4%;
+        z-index: 20;
+        background-color: white;
+    }
+    header{
+        padding: 8px 0 0 0;
+    }
+    .menu i{
+        display: none;
+    }
+    .menu .input-subscribe{
+        display: block;
+    }
+    .menu a:hover{
+        transition: 0.2s;
+        color: #11da71;
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        z-index: 20;
+    }
+    .btn-drop-menu{
+        display: inline-block;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu nav ul li:first-child{
+        padding: 20px;
+    }
+    .menu nav ul li:not(:first-child){
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+@media screen and (max-width:880px){
+    .hero-information{
+        width: 100%;
+        padding: 0 2%;
+    }
+    .list-programs{
+        flex-direction: column;
+    }
+    .box-program{
+        width: 100%;
+    }
+    .box-program:not(:first-child){
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:850px) {
+    .box-trainings{
+        flex-direction: column;
+    }
+    .training-wrapper-information{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .training-information{
+        flex-direction: column;
+    }
+    .training-information div:not(:first-child), .training-information i {
+        margin-left: 0px;
+    }
+    .training-information div, .training-information i{
+        margin-top: 30px;
+    }
+    .training-title-wrapper{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .box-news-wrapper{
+        flex-direction: column;
+    }
+    .box-news{
+        width: 100%;
+    }
+    .box-news:not(:first-child){
+        margin-left:0;
+        margin-top: 25px;
+    }
+    footer > .container{
+        padding: 0 10%;
+    }
+    .footer-wrapper{
+        flex-direction: column;
+    }
+    .edu-information{
+        width: 100%;
+    }
+    .contacts{
+        width: 100%;
+        margin-top: 35px;
+    }
+    .edu-menu{
+        text-align: center;
+        display: inline-block;
+        text-align: left;
+        margin-top: 35px;
+    }
+}
+@media screen and (max-width:500px){
+    .menu .input-subscribe{
+        width: 100%;
+    }
+    .menu{
+        padding: 0 4%;
+    }
+}
+@media screen and (max-width:270px){
+    .box-reviews{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .box-reviews img{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .information-contacts-one{
+        flex-direction: column;
+    }
+    .information-contacts-one a{
+        margin-top: 15px;
+    }
+}
