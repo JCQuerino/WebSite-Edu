@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.11.0/css/all.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- https://www.pexels.com/pt-br/licenca/ -->
+    <title>mundo</title>
+</head>
+<body>
+    <header>
+        <div class="container flex">
+            <div class="logo">
+                <a href=""><img src="images/logo_cedup_light_theme.png" alt="logo"></a>
+            </div>
+            <div class="icons-theme-wrapper">
+                <i class="fas fa-sun light" theme='light'></i>
+                <i class="far fa-moon dark" theme='dark'></i>
+            </div>
+            <div class="menu-desktop">
+                <nav>
+                    <ul>
+                        <li><a href="#">Cursos</a> <i class="fas fa-chevron-down"></i>
+                            <ul>
+                                <li><a href="#">Médio</a>
+                                    <ul class="curso-medio">
+                                        <li><a href="#">Técnico em Internet</a></li>
+                                        <li><a href="#">Técnico em Vendas</a></li>
+                                        <li><a href="#">Técnico em Mecânica</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Pós médio</a>
+                                    <ul class="curso-tecnico">
+                                        <li><a href="#">Técnico em Eletrônica</a></li>
+                                        <li><a href="#">Técnico em Mecânica</a></li>
+                                        <li><a href="#">Técnico em Administração</a></li>
+                                        <li><a href="#">Técnico em Contabilidade</a></li>
+                                        <li><a href="#">Técnico em Enfermagem</a></li>
+                                        <li><a href="#">Técnico em Informática</a></li>
+                                        <li><a href="#">Técnico em Seguraça do Trabalho</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#informativo">Informativo</a>
+                        </li>
+                        <li><a href="#institucional">Institucional</a></li>
+                        <li><a href="#editais">Editais</a></li>
+                        <i class="fas fa-search icon-search"></i>
+                        <div class="input-subscribe" style="display: none;">
+                            <input type="text" placeholder="Search anything">
+                            <div class="subscribe-submit">
+                                <input type="submit" value="Search">
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-mobile">
+                <nav>
+                    <ul>
+                        <li class=""><a href="#">Cursos</a> <i class="fas fa-chevron-down open-next-ul"></i>
+                            <ul class="cursos" style="display: none;">
+                                <li><a href="#">Médio</a> <i class="fas fa-chevron-down open-next-ul"></i>
+                                    <ul class="" style="display: none;">
+                                        <li><a href="#">Técnico em Internet</a></li>
+                                        <li><a href="#">Técnico em Vendas</a></li>
+                                        <li><a href="#">Técnico em Mecânica</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Pós médio</a> <i class="fas fa-chevron-down open-next-ul"></i>
+                                    <ul class="" style="display: none;">
+                                        <li><a href="#">Técnico em Eletrônica</a></li>
+                                        <li><a href="#">Técnico em Mecânica</a></li>
+                                        <li><a href="#">Técnico em Administração</a></li>
+                                        <li><a href="#">Técnico em Contabilidade</a></li>
+                                        <li><a href="#">Técnico em Enfermagem</a></li>
+                                        <li><a href="#">Técnico em Informática</a></li>
+                                        <li><a href="#">Técnico em Seguraça do Trabalho</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#informativo">Informativo</a>
+                        </li>
+                        <li><a href="#institucional">Institucional</a></li>
+                        <li><a href="#editais">Editais</a></li>
+                        <i class="fas fa-search icon-search"></i>
+                        <div class="input-subscribe" style="display: none;">
+                            <input type="text" placeholder="Search anything">
+                            <div class="subscribe-submit">
+                                <input type="submit" value="Search">
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="btn-drop-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="overlay">
+                <div class="hero-information">
+                    <h1>CEDUP Diomício Freitas</h1>
+                    <p>Aqui o seu futuro acontece. Venha estudar conosco!</p>
+                    <button class="btn-hero">BRILHE COM A GENTE</button>
+                </div>
+            </div>
+        </section>
+        <section class="cursos-cedup" id="cursos">
+            <div class="arrow-down"><i class="fas fa-arrow-down"></i></div>
+            <div class="container">
+                <div class="wrapper-cursos">
+                    <div class="cursos-title">
+                        <h2>Cursos</h2>
+                        <p>Alguns cursos que o CEDUP Diomício Freitas fornece.</p>
+                    </div>
+                    <div class="list-cursos">
+                        <div class="box-curso">
+                            <img src="images/internet.svg" alt="">
+                            <h3>Informática para Internet(Médio)</h3>
+                            <p>O curso de Informática para Internet que tem por objetivo formar um profissional que desenvolve sistemas e... </p>
+                            <button class="btn-curso">DETALHES</button>
+                        </div>
+                        <div class="box-curso">
+                            <img src="images/vendas.svg" alt="">
+                            <h3>Vendas(Médio)</h3>
+                            <p>Técnico em Vendas – Oferecido a partir de 2010, o Técnico em Vendas, eixo tecnológico de Gestão e Negócios, é um profissional...</p>
+                            <button class="btn-curso">DETALHES</button>
+                        </div>
+                        <div class="box-curso">
+                            <img src="images/mecanica.svg" alt="">
+                            <h3>Mecânica(Médio)</h3>
+                            <p>O Técnico em Mecânica, eixo tecnológico de processos Industriais, é um profissional com competências e habilidades... </p>
+                            <button class="btn-curso">DETALHES</button>
+                        </div>
+                        <div class="box-curso">
+                            <img src="images/enfermagem.svg" alt="">
+                            <h3>Enfermagem(Pós Médio)</h3>
+                            <p>O Técnico em Enfermagem é um profissional da área de saúde, integrante da equipe de enfermagem...</p>
+                            <button class="btn-curso">DETALHES</button>
+                        </div>
+                    </div>
+                    <button class="btn-cursos">VER TODOS OS CURSOS</button>
+                </div>
+            </div>
+        </section>
+        <section class="institucional" id="institucional">
+            <div class="container">
+                <div class="institucional-title">
+                    <h2>Institucional</h2>
+                    <p>Quer conhecer mais sobre o CEDUP Diomício Freitas? Visualize nosso institucional.</p>
+                </div>
+                <div class="institucional-wrapper">
+                    <div class="institucional-wrapper-2">
+                        <div class="box-institucional">
+                            <div class="logo-institucional">
+                                <img src="images/logo_pdf.png" alt="">
+                            </div>
+                            <div class="institucional-wrapper-information">
+                                <div class="institucional-title-wrapper">
+                                    <p class="institucional-title-single">
+                                        Associação de pais e professores
+                                    </p>
+                                    <p class="institucional-title-information">
+                                        Órgão de representação de pais e professores na escola... 
+                                    </p>
+                                </div>
+                                <div class="institucional-information">
+                                    <div class="box-institucional-data">
+                                        <p>Date:</p>
+                                        <p>20/12/2021</p>
+                                    </div>
+                                    <a href="../public/pdf/associação de pais e professores.pdf" target="_blank"><button>Visualizar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-institucional">
+                            <div class="logo-institucional">
+                                <img src="images/logo_pdf.png" alt="">
+                            </div>
+                            <div class="institucional-wrapper-information">
+                                <div class="institucional-title-wrapper">
+                                    <p class="institucional-title-single">
+                                        Calendario
+                                    </p>
+                                    <p class="institucional-title-information">
+                                        Calendario escolar 2021 CEDUP Diomício Freitas
+                                    </p>
+                                </div>
+                                <div class="institucional-information">
+                                    <div class="box-institucional-data">
+                                        <p>Date:</p>
+                                        <p>20/12/2021</p>
+                                    </div>
+                                    <a href="../public/pdf/Calendario.pdf" target="_blank"><button>Visualizar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-institucional">
+                            <div class="logo-institucional">
+                                <img src="images/logo_pdf.png" alt="">
+                            </div>
+                            <div class="institucional-wrapper-information">
+                                <div class="institucional-title-wrapper">
+                                    <p class="institucional-title-single">
+                                        Conselho deliberativo escolar
+                                    </p>
+                                    <p class="institucional-title-information">
+                                        O Conselho Deliberativo Escolar é um órgão colegiado de caráter consultivo...
+                                    </p>
+                                </div>
+                                <div class="institucional-information">
+                                    <div class="box-institucional-data">
+                                        <p>Date:</p>
+                                        <p>20/12/2021</p>
+                                    </div>
+                                    <a href="../public/pdf/conselho deliberativo escolar.pdf" target="_blank"><button>Visualizar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-institucional">
+                            <div class="logo-institucional">
+                                <img src="images/logo_pdf.png" alt="">
+                            </div>
+                            <div class="institucional-wrapper-information">
+                                <div class="institucional-title-wrapper">
+                                    <p class="institucional-title-single">
+                                        Direção
+                                    </p>
+                                    <p class="institucional-title-information">
+                                        Diretor e coordernação.
+                                    </p>
+                                </div>
+                                <div class="institucional-information">
+                                    <div class="box-institucional-data">
+                                        <p>Date:</p>
+                                        <p>20/12/2021</p>
+                                    </div>
+                                    <a href="../public/pdf/Direção.pdf" target="_blank"><button>Visualizar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-institucional">
+                            <div class="logo-institucional">
+                                <img src="images/logo_pdf.png" alt="">
+                            </div>
+                            <div class="institucional-wrapper-information">
+                                <div class="institucional-title-wrapper">
+                                    <p class="institucional-title-single">
+                                        Histórico
+                                    </p>
+                                    <p class="institucional-title-information">
+                                        O CEDUP Diomício Freitas iniciou suas atividades em setembro...
+                                    </p>
+                                </div>
+                                <div class="institucional-information">
+                                    <div class="box-institucional-data">
+                                        <p>Date:</p>
+                                        <p>20/12/2021</p>
+                                    </div>
+                                    <a href="../public/pdf/histórico CEDUP.pdf" target="_blank"><button>Visualizar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-institucional">
+                            <div class="logo-institucional">
+                                <img src="images/logo_pdf.png" alt="">
+                            </div>
+                            <div class="institucional-wrapper-information">
+                                <div class="institucional-title-wrapper">
+                                    <p class="institucional-title-single">
+                                        Projeto político pedagógico
+                                    </p>
+                                    <p class="institucional-title-information">
+                                        A educação é um compromisso do Estado, respaldado pela sociedade...
+                                    </p>
+                                </div>
+                                <div class="institucional-information">
+                                    <div class="box-institucional-data">
+                                        <p>Date:</p>
+                                        <p>20/12/2021</p>
+                                    </div>
+                                    <a href="../public/pdf/ppp .pdf" target="_blank"><button>Visualizar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news" id="informativo">
+            <div class="container">
+                <div class="news-title">
+                    <h2>Informativos</h2>
+                    <p>Fique ligado sobre tudo o que está acontecendo em nosso ambiente escolar.</p>
+                </div>
+                <div class="news-wrapper">
+                    <div class="box-news-wrapper">
+                        <div class="box-news">
+                            <p>12 de Março de 2021</p>
+                            <a href="">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adi</h3>
+                                <img src="images/5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-news">
+                            <p>12 de Março de 2021</p>
+                            <a href="">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adi</h3>
+                                <img src="images/5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-news">
+                            <p>12 de Março de 2021</p>
+                            <a href="">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adi</h3>
+                                <img src="images/5.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btn-news-wrapper">
+                        <button class="btn-news">ALL NEWS</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="edital" id="editais">
+            <div class="container">
+                <div class="edital-title">
+                    <h2>Customer edital</h2>
+                    <p>ipsam quos, odit in fugit recusandae? Minima, odio.</p>
+                </div>
+                <div class="edital-wrapper">
+                    <div class="box-edital-wrapper">
+                        <div class="box-edital">
+                            <div class="logo-edital">
+                                <img src="images/Nova-Logo-Marca-F-PNG.png" alt="">
+                            </div>
+                            <div class="information-edital">
+                                <h4>Lorem ipsum dolor maki sliw</h4>
+                                <p>nobis laborum numquam vel autem unde nulla aperiam totam, asperiores sunt maiores fugit voluptas rerum!</p>
+                                <p>nobis laborum numquam vel</p>
+                            </div>
+                        </div>
+                        <div class="box-edital">
+                            <div class="logo-edital">
+                                <img src="images/Nova-Logo-Marca-F-PNG.png" alt="">
+                            </div>
+                            <div class="information-edital">
+                                <h4>Lorem ipsum dolor maki sliw</h4>
+                                <p>nobis laborum numquam vel autem unde nulla aperiam totam, asperiores sunt maiores fugit voluptas rerum!</p>
+                                <p>nobis laborum numquam vel</p>
+                            </div>
+                        </div>
+                        <div class="box-edital">
+                            <div class="logo-edital">
+                                <img src="images/Nova-Logo-Marca-F-PNG.png" alt="">
+                            </div>
+                            <div class="information-edital">
+                                <h4>Lorem ipsum dolor maki sliw</h4>
+                                <p>nobis laborum numquam vel autem unde nulla aperiam totam, asperiores sunt maiores fugit voluptas rerum!</p>
+                                <p>nobis laborum numquam vel</p>
+                            </div>
+                        </div>
+                        <div class="box-edital">
+                            <div class="logo-edital">
+                                <img src="images/Nova-Logo-Marca-F-PNG.png" alt="">
+                            </div>
+                            <div class="information-edital">
+                                <h4>Lorem ipsum dolor maki sliw</h4>
+                                <p>nobis laborum numquam vel autem unde nulla aperiam totam, asperiores sunt maiores fugit voluptas rerum!</p>
+                                <p>nobis laborum numquam vel</p>
+                            </div>
+                        </div>
+                        <div class="box-edital">
+                            <div class="logo-edital">
+                                <img src="images/Nova-Logo-Marca-F-PNG.png" alt="">
+                            </div>
+                            <div class="information-edital">
+                                <h4>Lorem ipsum dolor maki sliw</h4>
+                                <p>nobis laborum numquam vel autem unde nulla aperiam totam, asperiores sunt maiores fugit voluptas rerum!</p>
+                                <p>nobis laborum numquam vel</p>
+                            </div>
+                        </div>
+                        <div class="box-edital">
+                            <div class="logo-edital">
+                                <img src="images/Nova-Logo-Marca-F-PNG.png" alt="">
+                            </div>
+                            <div class="information-edital">
+                                <h4>Lorem ipsum dolor maki sliw</h4>
+                                <p>nobis laborum numquam vel autem unde nulla aperiam totam, asperiores sunt maiores fugit voluptas rerum!</p>
+                                <p>nobis laborum numquam vel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-institucional">VER TODOS OS EDITAIS</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="edu-information">
+                    <div class="logo">
+                        <a href="">
+                            <img class="logo" src="images/logo_cedup_light_theme.png" alt="">
+                        </a>
+                    </div>
+                    <p>"A verdadeira generosidade para com o futuro consiste em dar tudo ao presente"</p>
+                    <p>Albert Camus</p>
+                </div>
+                <div class="edu-menu">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#informativo">Informativo</a></li>
+                        <li><a href="#institucional">Institucional</a></li>
+                        <li><a href="#editais">Editais</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <h4>Contato</h4>
+                    <div class="information-contacts-one">
+                        <p>(48) 9.9847-2187</p>
+                        <a href="https://www.google.com/maps/place/Cedup+Diomicio+Freitas/@-28.4939704,-49.0096049,17z/data=!3m1!4b1!4m5!3m4!1s0x952142dc361acee5:0x529debd4b81874ca!8m2!3d-28.4938589!4d-49.0074532">Localização</a>
+                    </div>
+                    <div class="information-contacts-two">
+                        <p>R. Júlio Boppré, 1280 - Santo Antônio de Pádua, Tubarão - SC, 88701-510</p>
+                    </div>
+                    <hr>
+                    <div class="subscribe">
+                        <h4>Subscribe a Newsletter</h4>
+                    </div>
+                    <div class="input-subscribe">
+                        <form action="">
+                            <input type="text" id="text-email" placeholder="Write your email">
+                            <div class="subscribe-submit">
+                                <input type="submit" id="send-request" value="Subscribe">
+                            </div>
+                        </form>
+                        <div class="wrong-email">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <h4>Ops. Menos de 10 caracteres</h4>
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="emailenviado">
+                            <span>Email cadastrado com sucesso. Você receberá notícias em breve.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="run-the-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/geral.js"></script>
+</body>
+</html>
