@@ -1,0 +1,66 @@
+.cursos-info{
+    margin-bottom: 50px;
+}
+.cursos-info .container{
+    max-width: 780px;
+}
+.cursos-info{
+    width: 100%;
+    background-color: var(--bg-main);
+}
+.content{
+    padding: var(--padding-top-cursos);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-curso-info{
+    width: 100%;
+    padding: 25px;
+    border-radius: 4px;
+    background-color: var(--box-color);
+    box-shadow: var(--box-shadow-cursos);
+    color: var(--text-color);
+}
+.topo-curso-info{
+    display: flex;
+    align-items: center;
+}
+.logo-curso img{
+    max-width: 150px;
+    border-radius: 3px;
+    margin-right: 30px;
+}
+.descricao{
+    margin-top: 10px;
+}
+.descricao p{
+    font-family: lato;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.wrapper-curso-info .box-curso-info:not(:first-child){
+    margin-top: 50px;
+}
+.main-title{
+    margin-top: 50px;
+    color: var(--text-color);
+}
+@media screen and (max-width:586px){
+    .topo-curso-info{
+        flex-direction: column;
+    }
+    .topo-curso-info .nome-curso{
+        margin-top: 17px;
+    }
+    .descricao{
+        margin-top: 17px;
+    }
+    .logo-curso img{
+        margin-right: 0;
+        border: 1px solid white;
+    }
+}

@@ -1,0 +1,98 @@
+.footer1{
+    padding: 70px 0;
+    background-color: var(--bg-main);
+    color: var(--text-color);
+    box-shadow: 0px -18px 22px -34px #000000;
+    position: relative;
+}
+.footer1 > .container{
+    max-width: 1000px;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.edu-information{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+.edu-information p{
+    margin-top: 20px;
+}
+.edu-menu{
+    text-align: center;
+    display: inline-block;
+    text-align: left;
+}
+.edu-menu li{
+    list-style: none;
+    margin-top: 15px;
+}
+.edu-menu li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.contacts{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.information-contacts-one{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.information-contacts-one a{
+    color:var(--second-color);
+}
+.information-contacts-two{
+    margin-top: 15px;
+}
+.contacts hr{
+    width: 50%;
+    border-collapse: collapse;
+    border: 0.5px solid rgb(240, 240, 240);
+    margin-top: 15px;
+}
+.redes-wrapper{
+    display: flex;
+    margin-top: 10px;
+}
+.redes-wrapper i{
+    font-size: 24px;
+    color: var(--text-color);
+}
+.redes-wrapper a:not(:first-child){
+    margin-left: 20px;
+}
+.redes-wrapper a{
+    text-decoration: none;
+}
+.footer2{
+    background-color:var(--background-extremidade);
+    text-align: center;
+    color: white;
+    padding:15px 0;
+}
+@media screen and (max-width:850px) {
+    footer > .container{
+        padding: 0 10%;
+    }
+    .footer-wrapper{
+        flex-direction: column;
+    }
+    .edu-information{
+        width: 100%;
+    }
+    .contacts{
+        width: 100%;
+        margin-top: 35px;
+    }
+    .edu-menu{
+        text-align: center;
+        display: inline-block;
+        text-align: left;
+        margin-top: 35px;
+    }
+}
